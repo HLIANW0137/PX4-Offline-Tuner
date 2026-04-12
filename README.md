@@ -10,9 +10,9 @@
 - 离线仿真评估
 - 报告与参数导出
 
-当前项目已经包含源码版和 Windows 发布版，适合直接演示、继续开发、或整理后上传 GitHub。
+当前项目已经包含源码版和 Windows 发布版，适合直接演示、继续开发。
 
-
+预览
 <img width="2414" height="1463" alt="屏幕截图 2026-04-12 164839" src="https://github.com/user-attachments/assets/8a24b613-8cd2-4be9-ba86-43344a3b176e" />
 
 
