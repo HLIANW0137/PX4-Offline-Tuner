@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "px4-offline-tuner"
+version = "0.1.0"
+description = "Offline PX4 log auto tuning tool for PID recommendation and simulation validation."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "plotly",
+  "streamlit",
+  "pyulog",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+]
+build = [
+  "pyinstaller",
+]
+
+[project.scripts]
+px4-tuner = "px4_offline_tuner.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

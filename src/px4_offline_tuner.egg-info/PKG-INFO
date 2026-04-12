@@ -1,0 +1,111 @@
+Metadata-Version: 2.4
+Name: px4-offline-tuner
+Version: 0.1.0
+Summary: Offline PX4 log auto tuning tool for PID recommendation and simulation validation.
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: plotly
+Requires-Dist: streamlit
+Requires-Dist: pyulog
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Provides-Extra: build
+Requires-Dist: pyinstaller; extra == "build"
+
+# PX4 Offline Tuner
+
+PX4 Offline Tuner is a practical offline auto-tuning tool for PX4 flight logs.
+It turns PX4 `ULog` or tabular `CSV` data into:
+
+- cleaned control data
+- frequency-domain diagnostics
+- a simple identified plant model
+- conservative, balanced, and aggressive PID recommendations
+- simulation-based validation
+- a Markdown and JSON report
+
+## Features
+
+- Import PX4 `ULog` logs through `pyulog`
+- Import normalized `CSV` logs for quick experimentation
+- Automatic resampling and low-pass filtering
+- Dominant frequency and control quality analysis
+- Simple first-order-plus-dead-time system identification
+- IMC-style PID tuning with risk-aware presets
+- Offline closed-loop simulation and comparison against the baseline
+- CLI pipeline and software-style Streamlit dashboard
+
+## Expected Input Columns
+
+For CSV input, the tool expects these columns:
+
+- `timestamp_s`
+- `axis`
+- `rate_setpoint`
+- `rate`
+- `control_output`
+
+Optional columns:
+
+- `attitude_setpoint`
+- `attitude`
+- `battery_voltage`
+
+The `axis` column should contain one of `roll`, `pitch`, `yaw`.
+
+## Quick Start
+
+```bash
+pip install -e .
+px4-tuner run --input sample_data/demo_log.csv --output outputs/demo
+```
+
+Start the dashboard:
+
+```bash
+px4-tuner ui
+```
+
+Or launch Streamlit directly:
+
+```bash
+streamlit run src/px4_offline_tuner/webapp.py
+```
+
+## Project Layout
+
+```text
+src/px4_offline_tuner/
+  cli.py
+  webapp.py
+  pipeline.py
+  models.py
+  log_loader.py
+  preprocessing.py
+  frequency.py
+  identification.py
+  tuning.py
+  simulation.py
+  reporting.py
+sample_data/
+tests/
+```
+
+## Current Scope
+
+This version is designed to be a strong MVP:
+
+- it focuses on multicopter rate-loop tuning
+- it supports offline analysis only
+- it produces explainable recommendations
+- it does not attempt direct flight-controller writes
+
+## Next Steps
+
+- add richer ULog topic mapping for more PX4 airframes
+- add multi-log joint identification
+- add actuator saturation and filter recommendation models
+- integrate SITL or Gazebo-based replay validation

@@ -1,0 +1,2 @@
+[console_scripts]
+px4-tuner = px4_offline_tuner.cli:main

@@ -1,0 +1,833 @@
+{
+  "input_path": "sample_data\\demo_log.csv",
+  "output_dir": "outputs\\demo_improved",
+  "axis_reports": [
+    {
+      "axis": "roll",
+      "dataset": {
+        "axis": "roll",
+        "sample_rate_hz": 200.0,
+        "quality_score": 0.5,
+        "quality_notes": [
+          "Setpoint excitation is weak; identification confidence will be limited.",
+          "Tracking error is noisy; derivative recommendations should be treated carefully."
+        ],
+        "sample_count": 380,
+        "data_preview": [
+          {
+            "timestamp_s": 0.0,
+            "rate_setpoint": -0.0,
+            "rate": 0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.005,
+            "rate_setpoint": 0.0,
+            "rate": -0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.01,
+            "rate_setpoint": 0.0,
+            "rate": -0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.015,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.02,
+            "rate_setpoint": -0.0,
+            "rate": 0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.025,
+            "rate_setpoint": -0.0,
+            "rate": 0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.03,
+            "rate_setpoint": -0.0,
+            "rate": -0.0,
+            "control_output": -0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.035,
+            "rate_setpoint": 0.0,
+            "rate": -0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.04,
+            "rate_setpoint": 0.0,
+            "rate": -0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.045,
+            "rate_setpoint": -0.0,
+            "rate": 0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.05,
+            "rate_setpoint": -0.0,
+            "rate": 0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.055,
+            "rate_setpoint": -0.0,
+            "rate": 0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.06,
+            "rate_setpoint": 0.0,
+            "rate": -0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.065,
+            "rate_setpoint": 0.0,
+            "rate": -0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.07,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.075,
+            "rate_setpoint": -0.0,
+            "rate": 3e-06,
+            "control_output": -0.0,
+            "tracking_error": -3e-06,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.08,
+            "rate_setpoint": -0.0,
+            "rate": 4e-06,
+            "control_output": -0.0,
+            "tracking_error": -4e-06,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.085,
+            "rate_setpoint": -0.0,
+            "rate": -7e-06,
+            "control_output": -0.0,
+            "tracking_error": 7e-06,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.09,
+            "rate_setpoint": 0.0,
+            "rate": -3.4e-05,
+            "control_output": 0.0,
+            "tracking_error": 3.4e-05,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.095,
+            "rate_setpoint": 0.0,
+            "rate": -2.6e-05,
+            "control_output": 0.0,
+            "tracking_error": 2.6e-05,
+            "setpoint_step": 0.0
+          }
+        ]
+      },
+      "frequency": {
+        "dominant_frequency_hz": 0.5263157894736842,
+        "noise_frequency_hz": 0.5263157894736842,
+        "bandwidth_estimate_hz": 1.0526315789473684,
+        "rms_error": 0.3052912981507662,
+        "latency_s": 0.155,
+        "diagnosis": [
+          "Bandwidth looks low; the loop is likely too conservative.",
+          "Tracking RMS error is elevated; consider more authority in the balanced preset.",
+          "Estimated delay is meaningful; aggressive tuning may reduce robustness."
+        ]
+      },
+      "model": {
+        "gain": 0.48741878693420115,
+        "time_constant_s": 0.04612592397961556,
+        "dead_time_s": 0.195,
+        "fit_score": 0.7153482289777184,
+        "damping_ratio": 0.7622915672899221,
+        "notes": [
+          "Estimated delay is large relative to plant time constant; robustness margin is limited.",
+          "Model bias is noticeable; the recommendation engine will lean conservative.",
+          "Model fit is acceptable for offline comparative tuning."
+        ]
+      },
+      "recommendations": [
+        {
+          "preset": "conservative",
+          "kp": 0.09706,
+          "ki": 0.71332,
+          "kd": 0.00662,
+          "risk": "low",
+          "rationale": [
+            "Derived from an IMC-style FOPDT tuning law with lambda factor 3.5.",
+            "Model fit score is 0.72, so the conservative preset emphasizes robustness.",
+            "Delay compensation reduced P and D slightly to preserve robustness."
+          ]
+        },
+        {
+          "preset": "balanced",
+          "kp": 0.12479,
+          "ki": 0.9654,
+          "kd": 0.00852,
+          "risk": "medium",
+          "rationale": [
+            "Derived from an IMC-style FOPDT tuning law with lambda factor 2.5.",
+            "Model fit score is 0.72, so the balanced preset emphasizes balanced tracking.",
+            "Delay compensation reduced P and D slightly to preserve robustness."
+          ]
+        },
+        {
+          "preset": "aggressive",
+          "kp": 0.16985,
+          "ki": 1.28899,
+          "kd": 0.01104,
+          "risk": "high",
+          "rationale": [
+            "Derived from an IMC-style FOPDT tuning law with lambda factor 1.7.",
+            "Model fit score is 0.72, so the aggressive preset emphasizes response speed.",
+            "Delay compensation reduced P and D slightly to preserve robustness."
+          ]
+        }
+      ],
+      "simulations": {
+        "conservative": {
+          "rise_time_s": Infinity,
+          "settling_time_s": Infinity,
+          "overshoot_pct": 0.0,
+          "steady_state_error": 0.4217988977040519,
+          "control_effort_rms": 0.8347388490026474,
+          "peak_control": 1.4246266,
+          "performance_score": 0.0,
+          "stable": true
+        },
+        "balanced": {
+          "rise_time_s": Infinity,
+          "settling_time_s": Infinity,
+          "overshoot_pct": 0.0,
+          "steady_state_error": 0.3058636904025701,
+          "control_effort_rms": 1.0275639680357453,
+          "peak_control": 1.833617,
+          "performance_score": 0.0,
+          "stable": true
+        },
+        "aggressive": {
+          "rise_time_s": Infinity,
+          "settling_time_s": Infinity,
+          "overshoot_pct": 0.0,
+          "steady_state_error": 0.19961990250467077,
+          "control_effort_rms": 1.2255777991998293,
+          "peak_control": 2.3842949499999997,
+          "performance_score": 0.0,
+          "stable": true
+        }
+      },
+      "output_dir": "outputs\\demo_improved\\roll",
+      "figures": {
+        "tracking": "outputs\\demo_improved\\roll\\roll_tracking.html",
+        "control": "outputs\\demo_improved\\roll\\roll_control.html"
+      }
+    },
+    {
+      "axis": "pitch",
+      "dataset": {
+        "axis": "pitch",
+        "sample_rate_hz": 200.0,
+        "quality_score": 0.5,
+        "quality_notes": [
+          "Setpoint excitation is weak; identification confidence will be limited.",
+          "Tracking error is noisy; derivative recommendations should be treated carefully."
+        ],
+        "sample_count": 380,
+        "data_preview": [
+          {
+            "timestamp_s": 0.0,
+            "rate_setpoint": -0.0,
+            "rate": 0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.005,
+            "rate_setpoint": 0.0,
+            "rate": -0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.01,
+            "rate_setpoint": 0.0,
+            "rate": -0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.015,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.02,
+            "rate_setpoint": -0.0,
+            "rate": 0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.025,
+            "rate_setpoint": -0.0,
+            "rate": 0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.03,
+            "rate_setpoint": -0.0,
+            "rate": -0.0,
+            "control_output": -0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.035,
+            "rate_setpoint": 0.0,
+            "rate": -0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.04,
+            "rate_setpoint": 0.0,
+            "rate": -0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.045,
+            "rate_setpoint": -0.0,
+            "rate": 0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.05,
+            "rate_setpoint": -0.0,
+            "rate": 0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.055,
+            "rate_setpoint": -0.0,
+            "rate": 0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.06,
+            "rate_setpoint": 0.0,
+            "rate": -0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.065,
+            "rate_setpoint": 0.0,
+            "rate": -0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.07,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.075,
+            "rate_setpoint": -0.0,
+            "rate": 3e-06,
+            "control_output": -0.0,
+            "tracking_error": -3e-06,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.08,
+            "rate_setpoint": -0.0,
+            "rate": 4e-06,
+            "control_output": -0.0,
+            "tracking_error": -4e-06,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.085,
+            "rate_setpoint": -0.0,
+            "rate": -7e-06,
+            "control_output": -0.0,
+            "tracking_error": 7e-06,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.09,
+            "rate_setpoint": 0.0,
+            "rate": -3.4e-05,
+            "control_output": 0.0,
+            "tracking_error": 3.4e-05,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.095,
+            "rate_setpoint": 0.0,
+            "rate": -2.6e-05,
+            "control_output": 0.0,
+            "tracking_error": 2.6e-05,
+            "setpoint_step": 0.0
+          }
+        ]
+      },
+      "frequency": {
+        "dominant_frequency_hz": 0.5263157894736842,
+        "noise_frequency_hz": 0.5263157894736842,
+        "bandwidth_estimate_hz": 1.0526315789473684,
+        "rms_error": 0.30795950015225293,
+        "latency_s": 0.16,
+        "diagnosis": [
+          "Bandwidth looks low; the loop is likely too conservative.",
+          "Tracking RMS error is elevated; consider more authority in the balanced preset.",
+          "Estimated delay is meaningful; aggressive tuning may reduce robustness."
+        ]
+      },
+      "model": {
+        "gain": 0.47373932734823804,
+        "time_constant_s": 0.04612592397961556,
+        "dead_time_s": 0.2,
+        "fit_score": 0.7092210635727407,
+        "damping_ratio": 0.7514629388095321,
+        "notes": [
+          "Estimated delay is large relative to plant time constant; robustness margin is limited.",
+          "Model bias is noticeable; the recommendation engine will lean conservative.",
+          "Model fit is acceptable for offline comparative tuning."
+        ]
+      },
+      "recommendations": [
+        {
+          "preset": "conservative",
+          "kp": 0.09737,
+          "ki": 0.70333,
+          "kd": 0.00682,
+          "risk": "low",
+          "rationale": [
+            "Derived from an IMC-style FOPDT tuning law with lambda factor 3.5.",
+            "Model fit score is 0.71, so the conservative preset emphasizes robustness.",
+            "Delay compensation reduced P and D slightly to preserve robustness."
+          ]
+        },
+        {
+          "preset": "balanced",
+          "kp": 0.12518,
+          "ki": 0.95188,
+          "kd": 0.00876,
+          "risk": "medium",
+          "rationale": [
+            "Derived from an IMC-style FOPDT tuning law with lambda factor 2.5.",
+            "Model fit score is 0.71, so the balanced preset emphasizes balanced tracking.",
+            "Delay compensation reduced P and D slightly to preserve robustness."
+          ]
+        },
+        {
+          "preset": "aggressive",
+          "kp": 0.17039,
+          "ki": 1.27093,
+          "kd": 0.01136,
+          "risk": "high",
+          "rationale": [
+            "Derived from an IMC-style FOPDT tuning law with lambda factor 1.7.",
+            "Model fit score is 0.71, so the aggressive preset emphasizes response speed.",
+            "Delay compensation reduced P and D slightly to preserve robustness."
+          ]
+        }
+      ],
+      "simulations": {
+        "conservative": {
+          "rise_time_s": Infinity,
+          "settling_time_s": Infinity,
+          "overshoot_pct": 0.0,
+          "steady_state_error": 0.4378923191645965,
+          "control_effort_rms": 0.8340287640699954,
+          "peak_control": 1.46488665,
+          "performance_score": 0.0,
+          "stable": true
+        },
+        "balanced": {
+          "rise_time_s": Infinity,
+          "settling_time_s": Infinity,
+          "overshoot_pct": 0.0,
+          "steady_state_error": 0.3221417348759932,
+          "control_effort_rms": 1.0300573208978647,
+          "peak_control": 1.8819394,
+          "performance_score": 0.0,
+          "stable": true
+        },
+        "aggressive": {
+          "rise_time_s": Infinity,
+          "settling_time_s": Infinity,
+          "overshoot_pct": 0.0,
+          "steady_state_error": 0.21431802840473624,
+          "control_effort_rms": 1.2333013523512775,
+          "peak_control": 2.44874465,
+          "performance_score": 0.0,
+          "stable": true
+        }
+      },
+      "output_dir": "outputs\\demo_improved\\pitch",
+      "figures": {
+        "tracking": "outputs\\demo_improved\\pitch\\pitch_tracking.html",
+        "control": "outputs\\demo_improved\\pitch\\pitch_control.html"
+      }
+    },
+    {
+      "axis": "yaw",
+      "dataset": {
+        "axis": "yaw",
+        "sample_rate_hz": 200.0,
+        "quality_score": 0.5,
+        "quality_notes": [
+          "Setpoint excitation is weak; identification confidence will be limited.",
+          "Tracking error is noisy; derivative recommendations should be treated carefully."
+        ],
+        "sample_count": 380,
+        "data_preview": [
+          {
+            "timestamp_s": 0.0,
+            "rate_setpoint": -0.0,
+            "rate": -0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.005,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.01,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.015,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.02,
+            "rate_setpoint": -0.0,
+            "rate": -0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.025,
+            "rate_setpoint": -0.0,
+            "rate": -0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.03,
+            "rate_setpoint": -0.0,
+            "rate": -0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.035,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.04,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.045,
+            "rate_setpoint": -0.0,
+            "rate": -0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.05,
+            "rate_setpoint": -0.0,
+            "rate": -0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.055,
+            "rate_setpoint": -0.0,
+            "rate": -0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.06,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.065,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.07,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.075,
+            "rate_setpoint": -0.0,
+            "rate": -0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.08,
+            "rate_setpoint": -0.0,
+            "rate": -0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": -0.0
+          },
+          {
+            "timestamp_s": 0.085,
+            "rate_setpoint": -0.0,
+            "rate": -0.0,
+            "control_output": -0.0,
+            "tracking_error": -0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.09,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          },
+          {
+            "timestamp_s": 0.095,
+            "rate_setpoint": 0.0,
+            "rate": 0.0,
+            "control_output": 0.0,
+            "tracking_error": 0.0,
+            "setpoint_step": 0.0
+          }
+        ]
+      },
+      "frequency": {
+        "dominant_frequency_hz": 0.5263157894736842,
+        "noise_frequency_hz": 0.5263157894736842,
+        "bandwidth_estimate_hz": 1.0526315789473684,
+        "rms_error": 0.3064485161952454,
+        "latency_s": 0.165,
+        "diagnosis": [
+          "Bandwidth looks low; the loop is likely too conservative.",
+          "Tracking RMS error is elevated; consider more authority in the balanced preset.",
+          "Estimated delay is meaningful; aggressive tuning may reduce robustness."
+        ]
+      },
+      "model": {
+        "gain": 0.43559542171219945,
+        "time_constant_s": 0.04612592397961556,
+        "dead_time_s": 0.2,
+        "fit_score": 0.701799844357966,
+        "damping_ratio": 0.7141066164437685,
+        "notes": [
+          "Estimated delay is large relative to plant time constant; robustness margin is limited.",
+          "Model bias is noticeable; the recommendation engine will lean conservative.",
+          "Model fit is acceptable for offline comparative tuning."
+        ]
+      },
+      "recommendations": [
+        {
+          "preset": "conservative",
+          "kp": 0.10589,
+          "ki": 0.76492,
+          "kd": 0.00741,
+          "risk": "low",
+          "rationale": [
+            "Derived from an IMC-style FOPDT tuning law with lambda factor 3.5.",
+            "Model fit score is 0.70, so the conservative preset emphasizes robustness.",
+            "Delay compensation reduced P and D slightly to preserve robustness."
+          ]
+        },
+        {
+          "preset": "balanced",
+          "kp": 0.13615,
+          "ki": 1.03523,
+          "kd": 0.00953,
+          "risk": "medium",
+          "rationale": [
+            "Derived from an IMC-style FOPDT tuning law with lambda factor 2.5.",
+            "Model fit score is 0.70, so the balanced preset emphasizes balanced tracking.",
+            "Delay compensation reduced P and D slightly to preserve robustness."
+          ]
+        },
+        {
+          "preset": "aggressive",
+          "kp": 0.18531,
+          "ki": 1.38222,
+          "kd": 0.01235,
+          "risk": "high",
+          "rationale": [
+            "Derived from an IMC-style FOPDT tuning law with lambda factor 1.7.",
+            "Model fit score is 0.70, so the aggressive preset emphasizes response speed.",
+            "Delay compensation reduced P and D slightly to preserve robustness."
+          ]
+        }
+      ],
+      "simulations": {
+        "conservative": {
+          "rise_time_s": Infinity,
+          "settling_time_s": Infinity,
+          "overshoot_pct": 0.0,
+          "steady_state_error": 0.43789133857420526,
+          "control_effort_rms": 0.9070585853292892,
+          "peak_control": 1.5917146,
+          "performance_score": 0.0,
+          "stable": true
+        },
+        "balanced": {
+          "rise_time_s": Infinity,
+          "settling_time_s": Infinity,
+          "overshoot_pct": 0.0,
+          "steady_state_error": 0.32214336796297693,
+          "control_effort_rms": 1.1202570030658598,
+          "peak_control": 2.04732615,
+          "performance_score": 0.0,
+          "stable": true
+        },
+        "aggressive": {
+          "rise_time_s": Infinity,
+          "settling_time_s": Infinity,
+          "overshoot_pct": 0.0,
+          "steady_state_error": 0.21431829251646872,
+          "control_effort_rms": 1.3412947982598336,
+          "peak_control": 2.6622210999999996,
+          "performance_score": 0.0,
+          "stable": true
+        }
+      },
+      "output_dir": "outputs\\demo_improved\\yaw",
+      "figures": {
+        "tracking": "outputs\\demo_improved\\yaw\\yaw_tracking.html",
+        "control": "outputs\\demo_improved\\yaw\\yaw_control.html"
+      }
+    }
+  ],
+  "summary": [
+    "Roll best preset is 'aggressive' (quality=0.50, fit=0.72, score=0.0).",
+    "Pitch best preset is 'aggressive' (quality=0.50, fit=0.71, score=0.0).",
+    "Yaw best preset is 'aggressive' (quality=0.50, fit=0.70, score=0.0)."
+  ]
+}

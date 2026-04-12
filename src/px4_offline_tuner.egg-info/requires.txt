@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+plotly
+streamlit
+pyulog
+
+[build]
+pyinstaller
+
+[dev]
+pytest
