@@ -212,36 +212,9 @@ pytest
 - 参数导出
 - 展示层数据构造
 
-## 上传 GitHub 建议
 
-当前环境里没有可用的 `gh` 命令，所以这里不能直接替你发布到 GitHub。  
-但项目已经整理成适合直接上传的状态，你可以这样操作：
 
-1. 在 GitHub 新建一个仓库
-2. 将当前 `PX4` 目录整体上传
-3. 或者本地执行：
-
-```bash
-git init
-git add .
-git commit -m "Initial release of PX4 Offline Tuner"
-git branch -M main
-git remote add origin <your-repo-url>
-git push -u origin main
-```
-
-你的 GitHub 主页是：[HLIANW0137](https://github.com/HLIANW0137)
-
-## 当前状态
-
-当前项目已经具备：
-
-- 可运行源码
-- 可运行发布版
-- 更详细的项目说明
-- 更干净的目录结构
-
-后续最自然的增强方向：
+后续增强方向：
 
 - 更细的 PX4 控制分层整定
 - 滤波参数建议
